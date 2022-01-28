@@ -1,2 +1,1 @@
 # Machine_Synthetic_DLC
-Unofficial_Machine_+_Synthetic_Empire_DLC_for_Stellaris
