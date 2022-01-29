@@ -1,0 +1,151 @@
+[img]https://i.postimg.cc/yxxVY1MW/rate-favorite.gif[/img]
+[h1] Stellaris v2.7.* Compatible [/h1]
+
+[h1] If you are looking for a mod for the latest stellaris, 
+check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2441507863] this mod. [/url] [/h1]
+
+[img]https://i.postimg.cc/yNgJTMGr/1.png[/img]
+This mod adds several contents about Machine Intelligence & Synthetic Ascended Empire.
+Below is list of things that I consider as main contents of this mod.
+
+[h1] Processing Capacity [/h1]
+Processing Capacity is a representation of maximum limitation that
+Machine Intelligence Empire can control its group members efficiently.
+
+Empire gains advantage or disadvantage as its 'Supply : Demand Ratio' changes.
+Advantage or Disadvantage will be shown as an empire modifier.
+
+Put mouse cursor on Research Resources group on topbar (the one next to Unity icon)
+to see current supply and demand of Processing Capacity resource.
+If it's not displayed, use !!!Universal Resource Patch mod.
+
+Players can turn on / off this feature at mod menu in edicts tab.
+
+[i] Original idea of this mechanism is belong to youtube user 'Alpha1 Games' 
+in comment section of: https://youtu.be/NVeIDA9ec40 [/i]
+
+[h1] The Shroud [/h1]
+It's coped from vanilla and modified for this mod.
+Some of its effect has changed and some of its event has edited or removed.
+It can be accessed through special project of particular ascension perk.
+
+[i] Mod that modify vanilla's shroud file will not affect this mod. [/i]
+
+[h1] Central Core Modification [/h1]
+It allows players to add or remove custom traits to ruler of machine intelligence.
+It is unlocked by 'Central Core Modification' technology, and provided with custom UI.
+
+[h1] Leader Unit Assembly [/h1]
+It allows players to create customized leaders with different skill level and trait.
+It is unlocked by 'Leader Class Unit Manufacture' technology, and provided with custom UI.
+
+
+[img]https://i.postimg.cc/05LmLV3q/1-25.png[/img]
+
+[h1] Synthetic Ascended [/h1]
+It allows players to start the game as a Synthetic Ascended Empire.
+Players must choose non-gestalt ethics to select it.
+
+[h1] Machine Heritage [/h1]
+It allows players to start the game as a Machine Intelligence Empire, with 25 size machine homeworld.
+Main species will suffer 100% of habitability penalty in other planets except the machine world.
+
+[h1] Synthetic Heritage [/h1]
+It allows players to start the game as a Synthetic Ascended Empire, with 25 size machine homeworld.
+Main species will suffer 100% of habitability penalty in other planets except the machine world.
+Players must choose non-gestalt ethics to select it.
+
+[img]https://i.postimg.cc/QMBp7WCP/1-1.png[/img]
+
+[h1] Individual Mind [/h1]
+It allows Machine Intelligence Empire to be transformed into Synthetic Ascended Empire
+through special project.
+
+[h1] United Mind [/h1]
+It allows Synthetic Ascended Empire to be transformed into Machine Intelligence Empire
+through special project.
+
+[h1] Hybrid Machine Project [/h1]
+It allows Machine Intelligence Empire to gain 'Organic-Machine Hybrid' species
+through special project.
+
+The species can grow and can have some of both biological and mechanical traits.
+It is also be able to use most of species portrait.
+
+[h1] Planetary Machine Project [/h1]
+It allows 3 unique worlds which mostly requires no pop to produce resources.
+
+[h1] Psionic Project [/h1]
+It allows Synthetic Ascended Empire to access to the Shroud with cost of 30000 energy.
+Empire needs 'Psionic Emitter' building to access the Shroud.
+It also gives 'Psionic' trait to synthetic pops.
+
+[h1] Base Code Recomposition [/h1]
+It allows Machine Intelligence Empire to gain
+'Determined Exterminator' or 'Driven Assimilator' or 'Rogue Servitor' civic.
+
+It also allows empire to become normal Machine Intelligence Empire if it has one of those civics.
+
+[h1] War Protocol: B1-66ER [/h1]
+Exclusive only for Determined Exterminator or Synthetic Ascended Empire.
+It allows Machine Intelligence Empire to trigger machine uprising against other empires.
+
+[h1] Mixed Evolution [/h1]
+Exclusive only for Driven Assimilator.
+Machine trait points +2 Organic trait points +4 Species Modification Cost -33%
+It also adds research option of 'Genetic Resequencing' technology.
+
+It can not be combined with 'Mechanical Evolution' perk.
+
+[h1] Servitor Economy 2.0 [/h1]
+Exclusive only for Rogue Servitor.
+It unlocks various buildings and jobs for bio trophies.
+Bio trophy output +10%
+
+[h1] And there are more in game! [/h1]
+
+[h1] Overwritten Vanilla Files [/h1]
+1. Stellaris\common\country_types\00_country_types.txt (line 86 to 455)
+2. Stellaris\common\game_rules\00_rules.txt (line 616 to 626) 
+3. Stellaris\interface\resource_groups\topbar_research_resource_groups.txt (all)
+4. Stellaris\common\game_rules\00_rules.txt (line 582 to 605)
+
+They are overwritten for:
+1. 'Trading Machine' civic.
+2. 'Hybrid Machine & Robot Project' ascension perk and Synthetic Empire's 'Growth Only' policy.
+3. 'Processing Capacity' icon in Research Resources group on top bar.
+4. 'Emotion Emulation' civic.
+
+
+[img]https://i.postimg.cc/vTMcbcZp/3.png[/img]
+[h1] Bug Report Thread [/h1]
+[h1] [url=https://steamcommunity.com/workshop/filedetails/discussion/1762062219/1640926712954218098/] Click to open [/url] [/h1]
+
+[img]https://i.postimg.cc/y6btLPK5/4.png[/img]
+[h1] Suggestion Thread [/h1]
+[h1] [url=https://steamcommunity.com/workshop/filedetails/discussion/1762062219/1640926712954242750/] Click to open [/url] [/h1]
+
+[img]https://i.postimg.cc/9Myr6GCd/4.png[/img]
+[h1] Patch Note Thread [/h1]
+[h1] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/1762062219] Click to open [/url] [/h1]
+
+[h1] Addon [/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1993870803] Korean Language Addon [/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061110311] Russian Language Addon [/url]
+
+[h1] Changed Planet Texture [/h1]
+Machine World
+
+[h1] Special Thanks [/h1]
+Alpha1 Games, for main concept of 'Processing Power' mechanism.
+Life-seeded, author of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765242356] Masters of the Planet [/url] mod, for partial technical support of this mod.
+
+[h1] Number of added contents [/h1]
+1 Custom Start Screen / 7 Custom textures / 2 Custom UIs / 13 Empire Emblems
+3 Army Types / 1 Bombardment Stance / 5 War Goals / 1 Planet-Killer Weapon
+2 Relic / 1 Shroud (Modified for Machine & Synthetic Empire)
+5 Planet Classes / 18 Districts / 21 Buildings / 30 Pop Jobs
+19 Ascension Perks / 13 Special Projects
+12 Decisions / 7 Policies / 9 Edicts
+19 Civics / 2 Government Types
+14 Technologies / 24 Traits

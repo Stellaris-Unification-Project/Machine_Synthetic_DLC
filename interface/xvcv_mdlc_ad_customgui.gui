@@ -1,0 +1,150 @@
+guiTypes = {
+
+	#Made to advertise my new 'Machine & Robot Expansion' mod
+
+	containerWindowType = {
+
+		####################### Hidden UI #########################
+		buttonType = { name = "focus_button" position = { x = -10000 y = 0 } spriteType = "GFX_fleetview_focus" } # hidden
+		instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -10000 y = 0 } } # hidden
+		buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -10000 y = 0 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+		instantTextBoxType={ name = "alien_message" font = "malgun_goth_24" } # hidden 
+		buttonType = { name = "empire_flag" position = { x = -10000 y = 0 } spriteType = "GFX_empire_flag_128" } # hidden
+		buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = -10000 y = 0 }
+			size = { width = 0 height = 0 }		# hide portrait window
+			#iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+			iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+		}
+		containerWindowType = {
+			name = "portrait"
+			position = { x = -10000 y = 0 }
+			size = { width = 0 height = 0 } # hide portrait window
+			iconType = { name = "portrait" spriteType = "GFX_portrait_gamesetup_mask"  } # hidden
+			iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" } # hidden
+			iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" } # hidden
+			iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+		}
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = -10000 y = 0 }
+			containerWindowType = { name = "empire_traits_box" } # hidden
+			instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+			overlappingElementsBoxType = { name = "leader_traits" } # hidden
+			instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+			instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+		}
+		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+		instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden 
+		instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+		instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+		OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -10000 y = 0 } } # hidden
+
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = -10000 y = 0 }
+			size = { width = 94 height = 30 }
+			iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+			instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+		}
+		containerWindowType = {
+			name = "EVENT_DIPLO" # hidden
+			position = { x = -10000 y = 0 }
+			moveable = no
+			instantTextBoxType={
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = -10000 y = 0 }
+				maxWidth = 450
+				maxHeight = 60
+				alwaysTransparent = yes
+			}
+			instantTextBoxType={
+				name = "action_desc"
+				font = "cg_16b"
+				position = { x = -10000 y = 0 }
+				maxWidth = 500
+				maxHeight = 180
+				Orientation = "UPPER_LEFT"
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+			listboxType = {
+				name = "option_list"
+				position = { x = -10000 y = 0 } 
+				size = { x = 1 y = 1 }
+				orientation = "UPPER_LEFT"
+				#background = ""
+			}
+		}
+		################## Actually Displayed UI ##################
+		name = "xvcv_mdlc_leader_making"
+		orientation = center
+		origo = center
+		moveable = no
+		position = { x = 0 y = 0 }
+		size = { width = 550 height = 665 }
+		show_sound = "interface"
+		background = { name = "background" quadTextureSprite = "GFX_tile_outliner_bg" }
+
+		iconType = { name = "hex_bg" spriteType = "GFX_hex_bg" position = { x = -10 y = -14 } alwaysTransparent = yes }
+		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_medium" position = { x = 6 y = 22 } alwaysTransparent = yes }
+
+		instantTextBoxType = {
+			name = "xvcv_mdlc_ad_header"
+			font = "malgun_goth_24"
+			text = "HEADER_XVCV_MDLC_MOD_AD"
+			position = { x = 15 y = 5 }
+		}
+		instantTextBoxType = {
+			name = "xvcv_mdlc_ad_header_2"
+			font = "malgun_goth_24"
+			text = "HEADER_XVCV_MDLC_MOD_AD_2"
+			position = { x = 98 y = 5 }
+		}
+		iconType = {
+			name = "xvcv_mdlc_ad_pic"
+			spriteType = "GFX_xvcv_mdlc_ad_pic"
+			position = { x = 19 y = 50 }
+		}
+		iconType = {
+			name = "xvcv_mdlc_ad_pic_frame"
+			spriteType = "GFX_xvcv_mdlc_ad_pic_frame"
+			position = { x = 19 y = 50 }
+		}
+		instantTextBoxType = {
+			name = "xvcv_mdlc_ad_desc"
+			maxWidth = 550
+			maxHeight = 128
+			format = center
+			position = { x = 0 y = 567 }
+			font = "malgun_goth_24"
+			text_color_code = "E"
+			text = "XVCV_MDLC_AD_DESC"
+		}
+		instantTextBoxType = {
+			name = "xvcv_mdlc_ad_desc_2"
+			maxWidth = 550
+			maxHeight = 128
+			format = center
+			position = { x = 0 y = 592 }
+			font = "malgun_goth_24"
+			text_color_code = "E"
+			text = "XVCV_MDLC_AD_DESC_2"
+		}
+		effectbuttonType = {
+			name = "close"
+			position = { x = 129 y = 623 }
+			size = { x = 140 y = 30 }
+			quadTextureSprite = "GFX_galactic_object_button"
+			buttonText = "TEXT_XVCV_MDLC_AD_CONFIRM"
+			buttonFont = "malgun_goth_24"
+			clicksound = "back_click"
+			effect = "xvcv_mdlc_ad_confirm_button_effect"
+			shortcut = "ESCAPE"
+		}
+	}
+}

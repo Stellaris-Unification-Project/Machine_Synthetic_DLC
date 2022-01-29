@@ -1,0 +1,5 @@
+xvcv_mdlc_ad_confirm_button_effect = {
+    potential = { always = yes }
+    allow = { always = yes }
+    effect = { custom_tooltip = xvcv_mdlc_ad_confirm_button_tooltip }
+}

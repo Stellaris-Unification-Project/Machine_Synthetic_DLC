@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_xvcv_mdlc_ad_pic"
+		texturefile = "gfx/interface/icons/customgui/xvcv_mdlc_ad_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_xvcv_mdlc_ad_pic_frame"
+		texturefile = "gfx/interface/icons/customgui/xvcv_mdlc_ad_pic_frame.dds"
+	}
+
+
+
+	
+
+
+
+}
