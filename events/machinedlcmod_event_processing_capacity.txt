@@ -45,7 +45,7 @@ event = {
 	is_triggered_only = yes
 
 	trigger = {
-		any_country = {
+		any_playable_country = {
 			has_global_flag = machinedlc_new_feature_1
 			is_ai = no
 			has_authority = auth_machine_intelligence

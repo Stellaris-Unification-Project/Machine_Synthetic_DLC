@@ -22,8 +22,10 @@ synth_segment_city = {
 	}
 	
 	allow = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	conversion_ratio = 1
@@ -104,7 +106,7 @@ synth_segment_city = {
 				num_free_districts = { type = synth_segment_generator value > 0 }
 				num_free_districts = { type = synth_segment_farming value > 0 }
 			}
-			count_pops = {
+			count_owned_pop = {
 				limit = {
 					is_unemployed = yes
 					NOR = {

@@ -847,7 +847,7 @@ ap_machine_next_gen_colonizer = {
 		custom_tooltip = ap_machine_next_gen_colonizer_tooltip
 		hidden_effect = {
 			random_system_within_border = {
-				limit = { any_system_planet = { is_capital = yes } }
+				limit = { is_capital_system = yes }
 				starbase = {
 					create_fleet = {
 						effect = {

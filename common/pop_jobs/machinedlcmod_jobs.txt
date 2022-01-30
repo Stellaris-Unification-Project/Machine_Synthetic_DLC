@@ -11,9 +11,9 @@ metal_cracker = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -127,9 +127,10 @@ metal_cracking_drone = {
 		is_being_assimilated = no
 	}	
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_miners
@@ -182,9 +183,10 @@ adjusting_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}	
+		}	
 	
 	country_modifier = {
 		planet_jobs_simple_drone_produces_mult = 0.005
@@ -220,9 +222,10 @@ security_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	country_modifier = {
 		planet_crime_no_happiness_add = -5
@@ -266,9 +269,10 @@ machinedlc_drone_inactive = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
     planet_modifier = {
 		planet_crime_no_happiness_add = -1	
@@ -294,9 +298,10 @@ machinedlcmod_hybrid_cloning_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		pop_growth_speed = 0.25
@@ -342,9 +347,10 @@ hybrid_clone_maker = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		pop_growth_speed = 0.25
@@ -388,9 +394,10 @@ hybrid_clone_technician = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_pops_upkeep_mult = -0.1
@@ -490,9 +497,10 @@ machinedlc_optimizing_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}	
+		}	
 	
 	country_modifier = {
 		country_admin_cap_add = 15
@@ -968,9 +976,10 @@ synth_world_cyber_merchant = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 3
@@ -1080,9 +1089,10 @@ synth_world_cyber_calculator = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_researchers
@@ -1140,9 +1150,10 @@ synth_world_network_maintenance_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_no_happiness_add = 4
@@ -1226,9 +1237,10 @@ synth_world_cyber_trade_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 3
@@ -1280,9 +1292,10 @@ synth_mineral_replication_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_jobs
@@ -1331,9 +1344,10 @@ machinedlcmod_drone_parts_assembler = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_no_happiness_add = 5
@@ -1390,9 +1404,10 @@ machine_planet_supervisor_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_jobs
@@ -1945,9 +1960,10 @@ machinedlc_nanite_assembler_tech_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_jobs
@@ -1979,9 +1995,10 @@ machinedlc_nanite_programming_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = 0.15
@@ -2020,9 +2037,10 @@ machinedlc_drone_processor = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_jobs_machinedlc_drone_processor
@@ -2147,9 +2165,10 @@ machinedlcmod_clerk = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 2
@@ -2268,9 +2287,10 @@ machinedlcmod_merchant = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 5

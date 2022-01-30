@@ -24,7 +24,7 @@ wg_mass_disposal = {
 	on_accept = {
         custom_tooltip = artificial_extinction
         hidden_effect = {
-                every_country = {
+                every_playable_country = {
                 limit = { 
                     is_ai = no
                     NOT = { is_same_value = root }
@@ -62,7 +62,7 @@ wg_mass_disposal = {
     on_status_quo = {
         custom_tooltip = massacre
         hidden_effect = {
-            every_country = {
+            every_playable_country = {
             limit = { 
                 is_ai = no
                 NOT = { is_same_value = root }
@@ -357,7 +357,7 @@ wg_mass_assimilation_nanobot_partial = {
                                 traits = this
                             }
                         }
-                        change_species = last_created
+                        change_species = last_created_species
                         machinedlcmod_species_modify_clear_trait_pc_preference = yes
                         species_modify_change_trait_lithoid = yes
                         machinedlcmod_machine_citizenship_set = yes
@@ -390,7 +390,7 @@ wg_mass_assimilation_nanobot_partial = {
                                     traits = this
                                 }
                             }
-                            change_species = last_created
+                            change_species = last_created_species
                             machinedlcmod_species_modify_clear_trait_pc_preference = yes
                             species_modify_change_trait_lithoid = yes
                             machinedlcmod_machine_citizenship_set = yes
@@ -443,7 +443,7 @@ wg_mass_assimilation_nanobot_partial = {
                                 traits = this
                             }
                         }
-                        change_species = last_created
+                        change_species = last_created_species
                         machinedlcmod_species_modify_clear_trait_pc_preference = yes
                         species_modify_change_trait_lithoid = yes
                         machinedlcmod_machine_citizenship_set = yes

@@ -483,7 +483,7 @@ decision_remove_drone_unemployed = {
 	allow = {
 		custom_tooltip = {
 			fail_text = decision_remove_drone_unemployed_requirements
-			count_pops = { limit = { is_unemployed = yes } count >= 1 }
+			count_owned_pop = { limit = { is_unemployed = yes } count >= 1 }
 		}
 	}
 

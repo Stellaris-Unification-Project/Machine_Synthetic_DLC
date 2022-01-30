@@ -246,7 +246,7 @@ district_machinedlc_drone_storage_auto = {
 		weight = 0
 		modifier = {
 			weight = 500
-			count_pops = {
+			count_owned_pop = {
 				limit = { is_unemployed = yes }
 				count >= 20
 			}

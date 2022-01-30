@@ -1,5 +1,5 @@
 d_under_sanctuary = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -19,7 +19,7 @@ d_under_sanctuary = {
 }
 #upgraded from above
 d_under_sanctuary_expanded = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -39,7 +39,7 @@ d_under_sanctuary_expanded = {
 	}
 }
 d_under_sanctuary_disabled = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -50,7 +50,7 @@ d_under_sanctuary_disabled = {
 	}
 }
 d_under_sanctuary_expanded_disabled = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -61,7 +61,7 @@ d_under_sanctuary_expanded_disabled = {
 	}
 }
 d_habitat_sanctuary = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -80,7 +80,7 @@ d_habitat_sanctuary = {
 	}	
 }
 d_habitat_sanctuary_disabled = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
     
 	resources = {
 		category = planet_deposits
@@ -92,7 +92,7 @@ d_habitat_sanctuary_disabled = {
 }
 #pc_cpu deposit
 d_control_unit = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 
 	planet_modifier = {
 		planet_stability_add = 10
@@ -113,7 +113,7 @@ d_control_unit = {
 d_machine_drone_storage = {	
 	time = 360
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers
 	
 	resources = {
@@ -139,7 +139,7 @@ d_machine_drone_storage = {
 	}
 }
 d_planet_network_control = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 
 	planet_modifier = {
 		planet_max_districts_add = -1
@@ -356,7 +356,7 @@ d_machine_pk_nanobot_swarmer_4_alt = {
 d_machinedlc_ruined_structures = {
 	time = 365
 
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers
 
 	potential = { always = no }
@@ -392,7 +392,7 @@ d_machinedlc_ruined_structures = {
 	}
 }
 d_machinedlc_start_housing_plus_2 = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 
 	planet_modifier = {
 		planet_housing_add = 2
@@ -405,7 +405,7 @@ d_machinedlc_start_housing_plus_2 = {
 }
 d_machinedlc_start_housing_plus_5 = {
 	icon = d_machinedlc_start_housing_plus_2
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 
 	planet_modifier = {
 		planet_housing_add = 5

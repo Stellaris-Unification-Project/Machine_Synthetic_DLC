@@ -2,7 +2,7 @@ can_destroy_planet_with_PLANET_KILLER_MACHINEDLC_NANOBOT_SWARMER = {
 	custom_tooltip = {
 		fail_text = is_not_a_habitable_planet_or_megastructure
 		OR = {
-			colonizeable_planet = yes
+			colonizable_planet = yes
 			is_planet_class = pc_infested
 			is_planet_class = pc_ai
 		}

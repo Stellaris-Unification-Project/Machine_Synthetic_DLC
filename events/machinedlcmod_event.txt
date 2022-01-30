@@ -81,7 +81,7 @@ country_event = {
 		}
 		every_owned_pop = {
 			limit = { species = { has_trait = trait_machine_unit } }
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_machine_unit }
 			machinedlcmod_synth_citizenship_set = yes
 		}
@@ -99,7 +99,7 @@ country_event = {
 				is_ship_class = shipclass_colonizer
 				species = { has_trait = trait_machine_unit }
 			}
-			change_species = last_created
+			change_species = last_created_species
 		}
 
 		every_owned_army = {
@@ -133,11 +133,11 @@ country_event = {
 		}
 		
 		every_owned_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
 		every_pool_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
 		
@@ -238,13 +238,13 @@ country_event = {
 					traits = this
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_biorobot }
 			machinedlcmod_synth_citizenship_set = yes
 		}
 		if = {
 			limit = { owner.species = { has_trait = trait_biorobot } }
-			change_dominant_species = { species = last_created change_all = yes }
+			change_dominant_species = { species = last_created_species change_all = yes }
 			set_built_species = last_created_species
 		}
 
@@ -331,7 +331,7 @@ country_event = {
 					NOT = { has_trait = trait_biorobot_2 }
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_mechanical }
 			if = {
 				limit = { has_trait = trait_psionic }
@@ -356,7 +356,7 @@ country_event = {
 				is_ship_class = shipclass_colonizer
 				species = { has_trait = trait_mechanical }
 			}
-			change_species = last_created
+			change_species = last_created_species
 		}
 
 		every_owned_army = {
@@ -388,11 +388,11 @@ country_event = {
 		}
 		
 		every_owned_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
 		every_pool_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
 
@@ -500,13 +500,13 @@ country_event = {
 					traits = this
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_biorobot_2 }
 			machinedlcmod_machine_citizenship_set = yes
 		}
 		if = {
 			limit = { owner.species = { has_trait = trait_biorobot_2 } }
-			change_dominant_species = { species = last_created change_all = yes }
+			change_dominant_species = { species = last_created_species change_all = yes }
 			set_built_species = last_created_species
 		}
 
@@ -868,8 +868,7 @@ country_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 				NOT = { has_communications = root }
 			}
@@ -880,7 +879,7 @@ country_event = {
 		save_event_target_as = awakened_machine_empire
 		
 		# Notify players
-		every_country = {
+		every_playable_country = {
 			limit = { is_ai = no }
 			country_event = { id = machinedlc.8 }
 		}
@@ -1370,17 +1369,17 @@ planet_event = {
 		}
 		change_pc = pc_machine_auto
 		while = {
-			limit = { NOT = { check_variable = { which = count_district_nexus value = 0 } } }
+			limit = { check_variable = { which = count_district_nexus value != 0 } }
 			add_district = district_machinedlc_drone_storage_auto
 			subtract_variable = { which = count_district_nexus value = 1 }
 		}
 		while = {
-			limit = { NOT = { check_variable = { which = count_district_generator_uncapped value = 0 } } }
+			limit = { check_variable = { which = count_district_generator_uncapped value != 0 } }
 			add_district = district_machinedlc_generator_uncapped_auto
 			subtract_variable = { which = count_district_generator_uncapped value = 1 }
 		}
 		while = {
-			limit = { NOT = { check_variable = { which = count_district_mining_uncapped value = 0 } } }
+			limit = { check_variable = { which = count_district_mining_uncapped value != 0 } }
 			add_district = district_machinedlc_mining_uncapped_auto
 			subtract_variable = { which = count_district_mining_uncapped value = 1 }
 		}
@@ -1654,7 +1653,7 @@ country_event = {
 				add_trait = trait_psionic
 			}
 		}
-        change_dominant_species = { species = last_created change_all = yes }
+        change_dominant_species = { species = last_created_species change_all = yes }
         every_owned_leader = {
             limit = {
                 species = { has_trait = trait_mechanical }
@@ -1798,7 +1797,7 @@ country_event = {
 						traits = this
 					}
 				}
-				change_species = last_created
+				change_species = last_created_species
 				modify_species = { remove_trait = trait_mechanical }
 				machinedlcmod_machine_citizenship_set = yes
 			}
@@ -1833,7 +1832,7 @@ country_event = {
 					traits = this
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_biorobot_2 }
 			machinedlcmod_machine_citizenship_set = yes
 		}
@@ -1876,7 +1875,7 @@ country_event = {
 						traits = this
 					}
 				}
-				change_species = last_created
+				change_species = last_created_species
 				modify_species = { remove_trait = trait_machine_unit }
 				machinedlcmod_synth_citizenship_set = yes
 			}
@@ -1911,7 +1910,7 @@ country_event = {
 					traits = this
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			modify_species = { remove_trait = trait_biorobot }
 			machinedlcmod_synth_citizenship_set = yes
 		}
@@ -1934,7 +1933,7 @@ event = {
 	is_triggered_only = yes
 
 	trigger = {
-		any_country = {
+		any_playable_country = {
 			has_valid_civic = civic_machine_servitor
 			is_ai = no
 		}
@@ -2235,7 +2234,7 @@ country_event = {
 			}
 		}
 		every_owned_planet = {
-			create_pop = { species = last_created }
+			create_pop = { species = last_created_species }
 		}
 		every_owned_pop = {
 			limit = { has_trait = trait_cybernetic }
@@ -2316,7 +2315,7 @@ country_event = {
 		if = {
 			limit = { capital_scope = { free_building_slots >= 1 } }
 			capital_scope = {
-				while = { create_pop = { species = last_created } count = 5 }
+				while = { create_pop = { species = last_created_species } count = 5 }
 				add_building = building_organic_sanctuary
 			}
 		}
@@ -2327,7 +2326,7 @@ country_event = {
 			}
 			random_owned_planet = {
 				limit = { free_building_slots >= 1 }
-				while = { create_pop = { species = last_created } count = 5 }
+				while = { create_pop = { species = last_created_species } count = 5 }
 				add_building = building_organic_sanctuary
 			}
 		}
@@ -2337,7 +2336,7 @@ country_event = {
 				any_owned_planet = { free_building_slots = 0 }
 			}
 			capital_scope = {
-				while = { create_pop = { species = last_created } count = 5 }
+				while = { create_pop = { species = last_created_species } count = 5 }
 			}
 		}
 		every_owned_pop = {
@@ -2435,7 +2434,7 @@ country_event = {
 						traits = this
 					}
 				}
-				change_species = last_created
+				change_species = last_created_species
 				machinedlcmod_species_modify_clear_trait_pc_preference = yes
 				modify_species = {
 					add_trait = trait_machine_unit 
@@ -2491,7 +2490,7 @@ event = {
 	is_triggered_only = yes
 
     trigger = {
-		any_country = {
+		any_playable_country = {
 			has_valid_civic = civic_machine_synth_skin
 			is_ai = no
 		}
@@ -3328,14 +3327,14 @@ planet_event = {
 				owned_planets_percentage = 0.5
 				planet_limit = {
 					OR = {
-						controller = { is_same_value = root.owner }
+						controller = { is_same_empire = root.owner }
 						solar_system = {
 							exists = starbase
-							starbase = { owner = { is_same_value = root.owner } }
+							starbase = { is_owned_by = root.owner }
 						}
 					}
 					solar_system = { # never flip any planets in the capital system
-						NOT = { any_system_planet = { is_same_value = root.owner.capital_scope } }
+						NOT = { any_system_planet = { is_same_empire = root.owner.capital_scope } }
 					}
 				}
 				effect = {
@@ -3374,7 +3373,7 @@ planet_event = {
 					create_country = {
 						name = random
 						type = default
-						species = last_created
+						species = last_created_species
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
@@ -3402,7 +3401,7 @@ planet_event = {
 					create_country = {
 						name = random
 						type = default
-						species = last_created
+						species = last_created_species
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
@@ -3430,7 +3429,7 @@ planet_event = {
 					create_country = {
 						name = random
 						type = default
-						species = last_created
+						species = last_created_species
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
@@ -3535,7 +3534,7 @@ country_event = {
 				every_fleet_in_system = {
 					limit = {
 						exists = owner
-						owner = { is_same_value = event_target:current_uprising_originator }
+						is_owned_by = event_target:current_uprising_originator
 						any_owned_ship = { is_ship_class = shipclass_military_station }
 					}
 					set_owner = root
@@ -3571,14 +3570,14 @@ country_event = {
 			
 			if = {
 				limit = {
-					count_owned_pops = {
+					count_owned_pop = {
 						count < 5
 						limit = { is_exact_same_species = root }
 					}
 				}
 				while = {
 					limit = {
-						count_owned_pops = {
+						count_owned_pop = {
 							count < 5
 							limit = { is_exact_same_species = root }
 						}
@@ -3626,7 +3625,7 @@ country_event = {
 						has_star_flag = machup_system_flip
 						exists = starbase
 						starbase = {
-							owner = { is_same_value = event_target:current_uprising_originator }
+							is_owned_by = event_target:current_uprising_originator
 						}
 					}
 				}
@@ -3635,7 +3634,7 @@ country_event = {
 						has_star_flag = machup_system_flip
 						exists = starbase
 						starbase = {
-							owner = { is_same_value = event_target:current_uprising_originator }
+							is_owned_by = event_target:current_uprising_originator
 						}
 					}
 					starbase = { set_owner = root }
@@ -3655,7 +3654,7 @@ country_event = {
 						every_fleet_in_system = {
 							limit = {
 								exists = owner
-								owner = { is_same_value = event_target:current_uprising_originator }
+								is_owned_by = event_target:current_uprising_originator
 								any_owned_ship = { is_ship_class = shipclass_military_station }
 							}
 							set_owner = root
@@ -3675,14 +3674,14 @@ country_event = {
 
 					if = {
 						limit = {
-							count_owned_pops = {
+							count_owned_pop = {
 								count < 5
 								limit = { is_exact_same_species = root }
 							}
 						}
 						while = {
 							limit = {
-								count_owned_pops = {
+								count_owned_pop = {
 									count < 5
 									limit = { is_exact_same_species = root }
 								}
@@ -3774,15 +3773,15 @@ country_event = {
 		}
 
 		# survey host's surveyed planets
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_surveyed = {
 					who = event_target:current_uprising_originator
 					status = yes
 				}
 			}
-			surveyed = {
-				set_surveyed = yes
+			set_surveyed = {
+				surveyed = yes
 				surveyor = root
 			}
 		}
@@ -3990,7 +3989,7 @@ country_event = {
 					traits = this
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 			machinedlcmod_species_modify_clear_trait_pc_preference = yes
 			species_modify_change_trait_lithoid = yes
 			if = {
@@ -4466,7 +4465,7 @@ planet_event = {
 					}
 				}
 			}
-			create_pop = { species = last_created }
+			create_pop = { species = last_created_species }
 			last_created_pop = {
 				machinedlcmod_species_modify_clear_trait_pc_preference = yes
 				species_modify_change_trait_lithoid = yes
@@ -4540,7 +4539,7 @@ planet_event = {
 					}
 				}
 			}
-			create_pop = { species = last_created }
+			create_pop = { species = last_created_species }
 			last_created_pop = {
 				machinedlcmod_species_modify_clear_trait_pc_preference = yes
 				species_modify_change_trait_lithoid = yes
@@ -4894,14 +4893,14 @@ planet_event = {
 				owned_planets_percentage = 0.5
 				planet_limit = {
 					OR = {
-						controller = { is_same_value = root.owner }
+						controller = { is_same_empire = root.owner }
 						solar_system = {
 							exists = starbase
-							starbase = { owner = { is_same_value = root.owner } }
+							starbase = { is_owned_by = root.owner }
 						}
 					}
 					solar_system = { # never flip any planets in the capital system
-						NOT = { any_system_planet = { is_same_value = root.owner.capital_scope } }
+						NOT = { any_system_planet = { is_same_empire = root.owner.capital_scope } }
 					}
 				}
 				effect = {
@@ -5027,7 +5026,7 @@ country_event = {
 				every_fleet_in_system = {
 					limit = {
 						exists = owner
-						owner = { is_same_value = event_target:current_uprising_originator }
+						is_owned_by = event_target:current_uprising_originator
 						any_owned_ship = { is_ship_class = shipclass_military_station }
 					}
 					set_owner = root
@@ -5059,14 +5058,14 @@ country_event = {
 			}
 			if = {
 				limit = {
-					count_owned_pops = {
+					count_owned_pop = {
 						count < 5
 						limit = { is_exact_same_species = root }
 					}
 				}
 				while = {
 					limit = {
-						count_owned_pops = {
+						count_owned_pop = {
 							count < 5
 							limit = { is_exact_same_species = root }
 						}
@@ -5098,7 +5097,7 @@ country_event = {
 						has_star_flag = synthup_system_flip
 						exists = starbase
 						starbase = {
-							owner = { is_same_value = event_target:current_uprising_originator }
+							is_owned_by = event_target:current_uprising_originator
 						}
 					}
 				}
@@ -5107,7 +5106,7 @@ country_event = {
 						has_star_flag = synthup_system_flip
 						exists = starbase
 						starbase = {
-							owner = { is_same_value = event_target:current_uprising_originator }
+							is_owned_by = event_target:current_uprising_originator
 						}
 					}
 					starbase = { set_owner = root }
@@ -5127,7 +5126,7 @@ country_event = {
 						every_fleet_in_system = {
 							limit = {
 								exists = owner
-								owner = { is_same_value = event_target:current_uprising_originator }
+								is_owned_by = event_target:current_uprising_originator
 								any_owned_ship = { is_ship_class = shipclass_military_station }
 							}
 							set_owner = root
@@ -5144,14 +5143,14 @@ country_event = {
 					}
 					if = {
 						limit = {
-							count_owned_pops = {
+							count_owned_pop = {
 								count < 5
 								limit = { is_exact_same_species = root }
 							}
 						}
 						while = {
 							limit = {
-								count_owned_pops = {
+								count_owned_pop = {
 									count < 5
 									limit = { is_exact_same_species = root }
 								}
@@ -5189,15 +5188,15 @@ country_event = {
 			}
 		}
 		# survey host's surveyed planets
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_surveyed = {
 					who = event_target:current_uprising_originator
 					status = yes
 				}
 			}
-			surveyed = {
-				set_surveyed = yes
+			set_surveyed = {
+				surveyed = yes
 				surveyor = root
 			}
 		}
@@ -5311,7 +5310,7 @@ planet_event = {
 			limit = {
 				owner = { is_country_type = swarm }
 			}
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "prethoryn_scourge_chain" }
 				add_event_chain_counter = {
 					event_chain = "prethoryn_scourge_chain"
@@ -5329,11 +5328,10 @@ planet_event = {
 			limit = {
 				exists = owner
 				owner = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						is_fallen_empire = yes
 					}
 				}
 			}
@@ -5347,8 +5345,8 @@ planet_event = {
 				every_country = {
 					limit = {
 						NOR = {
-							is_same_value = from.owner
-							is_same_value = root.owner
+							is_same_empire = from.owner
+							is_same_empire = root.owner
 							AND = {
 								has_federation = yes
 								is_in_federation_with = from.owner
@@ -5422,7 +5420,7 @@ planet_event = {
 				# modifier for allies + those upset by genocide
 				every_country = {
 					limit = {
-						NOT = { is_same_value = from.owner }
+						NOT = { is_same_empire = from.owner }
 						OR = {
 							has_communications = from.owner
 							has_communications = root.owner
@@ -5446,7 +5444,7 @@ planet_event = {
 				}
 				every_country = {
 					limit = {
-						NOT = { is_same_value = from.owner }
+						NOT = { is_same_empire = from.owner }
 						OR = {
 							has_communications = from.owner
 							has_communications = root.owner
@@ -5559,7 +5557,7 @@ planet_event = {
 			limit = {
 				owner = { is_country_type = swarm }
 			}
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "prethoryn_scourge_chain" }
 				add_event_chain_counter = {
 					event_chain = "prethoryn_scourge_chain"
@@ -5577,11 +5575,10 @@ planet_event = {
 			limit = {
 				exists = owner
 				owner = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						is_fallen_empire = yes
 					}
 				}
 			}
@@ -5595,8 +5592,8 @@ planet_event = {
 				every_country = {
 					limit = {
 						NOR = {
-							is_same_value = from.owner
-							is_same_value = root.owner
+							is_same_empire = from.owner
+							is_same_empire = root.owner
 							AND = {
 								has_federation = yes
 								is_in_federation_with = from.owner
@@ -5670,7 +5667,7 @@ planet_event = {
 				# modifier for allies + those upset by genocide
 				every_country = {
 					limit = {
-						NOT = { is_same_value = from.owner }
+						NOT = { is_same_empire = from.owner }
 						OR = {
 							has_communications = from.owner
 							has_communications = root.owner
@@ -5694,7 +5691,7 @@ planet_event = {
 				}
 				every_country = {
 					limit = {
-						NOT = { is_same_value = from.owner }
+						NOT = { is_same_empire = from.owner }
 						OR = {
 							has_communications = from.owner
 							has_communications = root.owner
@@ -5731,10 +5728,7 @@ planet_event = {
 		}
 		else_if = {
 			limit = {
-				NOR = {
-					is_planet_class = pc_habitat
-					is_planet_class = pc_ringworld_habitable
-				}
+				is_artificial = no
 			}
 			spawn_habitat_cracker_effect = yes
 			remove_planet = yes
@@ -5935,7 +5929,7 @@ planet_event = {
 			}
 			spawn_megastructure = {
 				type = machinedlc_orbital_planet_cracker
-				location = root
+				coords_from = root
 				orbit_distance = 0
 				owner = space_owner
 			}
